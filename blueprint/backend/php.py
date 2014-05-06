@@ -26,7 +26,7 @@ def php(b, r):
                               (pecl_manager, 'pecl')):
 
         try:
-            p = subprocess.Popen([progname, 'list'],
+            p = subprocess.Popen([progname, 'list', '-a'],
                                  close_fds=True, stdout=subprocess.PIPE)
         except OSError:
             continue
